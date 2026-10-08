@@ -50,42 +50,42 @@ const App = () => {
   }, []);
   return (
 
-        <BrowserRouter>
-          <Cursor />
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Cursor />
 
-          {/* Navbar lives OUTSIDE smooth-wrapper */}
-          <div className="fixed top-10 left-1/2 -translate-x-1/2 z-50 w-fit">
-            <div className="relative rounded-full p-0.5">
-              <Navbar />
-              <BorderBeam
-                size={100}
-                duration={5}
-                colorFrom="#f97316"
-                colorTo="#f97316"
-                borderWidth={2}
-              />
-            </div>
-          </div>
+      {/* Navbar lives OUTSIDE smooth-wrapper */}
+      <div className="fixed top-10 left-1/2 -translate-x-1/2 z-50 w-fit">
+        <div className="relative rounded-full p-0.5">
+          <Navbar />
+          <BorderBeam
+            size={100}
+            duration={5}
+            colorFrom="#f97316"
+            colorTo="#f97316"
+            borderWidth={2}
+          />
+        </div>
+      </div>
 
-          <div id="smooth-wrapper">
-            <div id="smooth-content">
-              <Routes>
-                <Route
-                  path="/"
-                  element={
-                    <div className="px-5 lg:px-20">
-                      <Home />
-                      <Work />
-                      <About meImg={meImg} />
-                      <WorkEx workImageTargetRef={workImageTargetRef} />
-                      <Contact />
-                    </div>
-                  }
-                />
-              </Routes>
-            </div>
-          </div>
-        </BrowserRouter>
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div className="px-5 lg:px-20">
+                  <Home />
+                  <Work />
+                  <About meImg={meImg} />
+                  <WorkEx workImageTargetRef={workImageTargetRef} />
+                  <Contact />
+                </div>
+              }
+            />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   )
 }
 
