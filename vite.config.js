@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
-  base: "/UIcraft.SpaceV2/",
+  base: "/",
   plugins: [tailwindcss()],
   resolve: {
     alias: {
