@@ -39,7 +39,7 @@ const About = ({ meImg }) => {
 
                 </div>
                 <div className="aboutImg flex items-center md:justify-center relative">
-                    <img src="./me2.png" alt="Mihir" className="project-image w-[80%] relative z-2 object-cover rounded-xl md:relative md:rotate-5 animate-[hanging_6s_ease-in-out_infinite] " />
+                    <img src="./This_is_me.webp" alt="Hello thereIntenet feels bad today, sorry!" className="project-image w-[80%] relative z-2 object-cover rounded-xl md:relative md:rotate-5 animate-[hanging_6s_ease-in-out_infinite] " />
                 </div>
             </div>
             {/* what i like to work on */}
