@@ -11,7 +11,7 @@ import WorkEx from './Pages/WorkEx';
 import { Flip } from "gsap/Flip";
 import { useEffect, useRef } from 'react';
 import Contact from './Pages/Contact';
-import { BorderBeam } from "@/components/ui/border-beam";
+import { BorderBeam } from "@/Components/ui/border-beam";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, Flip);
 
