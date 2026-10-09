@@ -1,9 +1,9 @@
 export const projects = [
   {
     id: "sundown-studio",
-    name: "Sundown Studio Design",
+    name: "Sundown Studio",
     category: "Creative Development",
-    image: "./sundown.webp",
+    image: "/sundown.webp",
 
     intro:
       "A motion-driven digital experience that brings visual storytelling, expressive layouts, and interactive web design together.",
@@ -11,12 +11,6 @@ export const projects = [
     overview: {
       description:
         "Sundown Studio Design is a creative website built to explore how frontend development can transform a visual concept into an engaging digital experience.",
-
-      objective:
-        "Create a distinctive online presence where layout, typography, imagery, and motion work together without compromising usability.",
-
-      contribution:
-        "Frontend implementation, responsive layouts, interaction development, and visual refinement.",
     },
 
     highlights: [
@@ -78,7 +72,7 @@ export const projects = [
     id: "roadbounce",
     name: "Roadbounce",
     category: "Dashboard Development",
-    image: "./dashboard.webp",
+    image: "/dashboard.webp",
 
     intro:
       "A React dashboard concept focused on presenting complex information through a structured, usable interface.",
@@ -153,7 +147,7 @@ export const projects = [
     id: "aera-music",
     name: "Aera Music",
     category: "Interactive Web Application",
-    image: "./aeraMusic.webp",
+    image: "/aeraMusic.webp",
 
     intro:
       "A mood-based music experience combining interactive audio, music discovery, and full-stack web development.",

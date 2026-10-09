@@ -3,10 +3,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import SplitTextComponent from '../Components/UI/SplitText';
+import { Link } from "react-router-dom";
 gsap.registerPlugin(SplitText);
 
 const Work = () => {
-    
+
 
     return (
         <div className='lg:px-2 min-h-screen' id="work">
@@ -27,7 +28,13 @@ const Work = () => {
                             <SplitTextComponent type='chars' delay={0.5}>
                                 <h2 className='text-4xl mt-4 mb-2 font-semibold'>{project.name}</h2>
                             </SplitTextComponent>
-                            <a href={project.link} target='_blank' className=' hover:text-white transition-colors duration-400 flex items-center gap-2'><span>View Project</span> <FaArrowRightLong /></a>
+                            <Link
+                                to={`/work/${project.id}`}
+                                className="flex items-center gap-2 hover:text-white transition-colors duration-300"
+                            >
+                                <span>View Project</span>
+                                <FaArrowRightLong />
+                            </Link>
                         </div>
                     </div>
                 ))}

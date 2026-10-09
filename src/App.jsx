@@ -9,10 +9,11 @@ import gsap from "gsap";
 import About from './Pages/About';
 import WorkEx from './Pages/WorkEx';
 import { Flip } from "gsap/Flip";
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import Contact from './Pages/Contact';
 import { BorderBeam } from "@/Components/UI/border-beam";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+import ProjectInfo from './Pages/ProjectInfo';
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, Flip);
 
 const App = () => {
@@ -31,23 +32,7 @@ const App = () => {
     return () => smoother.kill();
 
   }, []);
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Flip.fit(imgRef.current, workImageTargetRef.current, {
-      //   duration: 0.5,
-      //   ease: "power1.inOut",
-      //   scrollTrigger: {
-      //     trigger: workImageTargetRef.current,
-      //     start: "top 80%",
-      //     end: "top 30%",
-      //     scrub: 1,
-      //     // markers: true,
-      //   },
-      // });
-    });
 
-    return () => ctx.revert();
-  }, []);
   return (
 
     <BrowserRouter basename={import.meta.env.BASE_URL}>
@@ -81,6 +66,10 @@ const App = () => {
                   <Contact />
                 </div>
               }
+            />
+            <Route
+              path="/work/:projectId"
+              element={<ProjectInfo />}
             />
           </Routes>
         </div>
