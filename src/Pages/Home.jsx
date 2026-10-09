@@ -2,7 +2,20 @@ import { useEffect } from 'react';
 import Cube from '../Components/UI/Cube'
 import gsap from "gsap";
 import SplitTextComponent from '../Components/UI/SplitText';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+
 const Home = () => {
+    const scrollToSection = (selector) => {
+        const target = document.querySelector(selector);
+        if (!target) return console.warn('No element for', selector);
+
+        const smoother = ScrollSmoother.get();
+        if (smoother) {
+            smoother.scrollTo(target, true, 'top 100px');
+        } else {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     useEffect(() => {
 
         gsap.from(".hero-greet", {
@@ -18,7 +31,7 @@ const Home = () => {
 
     }, []);
     return (
-        <div className='min-h-[120vh] md:h-screen relative'  id="home">
+        <div className='min-h-[120vh] md:h-screen relative' id="home">
 
             <div className="text-center pt-60 lg:pt-30">
                 <p className="text-lg lg:text-[2rem] mb-4 hero-greet">
@@ -39,7 +52,10 @@ const Home = () => {
                     {/* <button className='px-6 py-3  text-lg rounded-3xl border transition-colors bg-black  text-white duration-400'>
                         Resume <span></span>
                     </button> */}
-                    <button className='px-6 py-3  text-lg rounded-3xl border bg-transparent transition-colors hover:bg-orange-400    duration-500'>
+                    <button
+                        onClick={() => scrollToSection("#work")}
+                        className="px-6 py-3 text-lg rounded-3xl border bg-transparent transition-colors hover:bg-orange-400 duration-500"
+                    >
                         My Work <span></span>
                     </button>
                 </div>

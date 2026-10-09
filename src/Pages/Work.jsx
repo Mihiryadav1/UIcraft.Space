@@ -6,6 +6,7 @@ import SplitTextComponent from '../Components/UI/SplitText';
 gsap.registerPlugin(SplitText);
 
 const Work = () => {
+    
 
     return (
         <div className='lg:px-2 min-h-screen' id="work">
