@@ -41,7 +41,7 @@ const Contact = () => {
                     interesting projects, or just having a chat about <br />
                     <span className="text-orange-500">
                         design, tech and interactive experiences.
-                </span>
+                    </span>
                 </p>
             </SplitTextComponent>
 
@@ -105,11 +105,11 @@ const Contact = () => {
 
                 {/* Button */}
                 <button
-                    className="mt-10 bg-black text-white rounded-full px-8 py-4 text-lg
+                    className="mt-10 bg-black text-white rounded-full p-4 text-lg
                flex items-center gap-6 hover:bg-orange-400 transition-colors duration-300"
                 >
                     Send Message
-                    <FiArrowUpRight className="text-xl" />
+                    {/* <FiArrowUpRight className="text-xl" /> */}
                 </button>
 
                 {/* Bottom information */}
@@ -124,10 +124,10 @@ const Contact = () => {
 
                         <a
                             href="mailto:yadavmihir30@gmail.com"
-                            className="text-xl flex items-center gap-2 hover:text-orange-500 transition-colors"
+                            className="flex items-center gap-1 text-orange-400 transition-colors text-2xl font-bold capitalize"
                         >
                             email
-                            <FiArrowUpRight />
+                            {/* <FiArrowUpRight /> */}
                         </a>
                     </div>
 
@@ -137,21 +137,21 @@ const Contact = () => {
 
                         <a
                             href="https://www.linkedin.com/in/mihir-yadav1/" target='_blank'
-                            className="flex items-center gap-1 hover:text-orange-500 transition-colors"
+                            className="flex items-center gap-1 text-orange-400 transition-colors text-2xl font-bold capitalize"
                         >
                             LinkedIn
-                            <FiArrowUpRight />
+                            {/* <FiArrowUpRight /> */}
                         </a>
 
                         <a
                             href="https://github.com/Mihiryadav1" target='_blank'
-                            className="flex items-center gap-1 hover:text-orange-500 transition-colors"
+                            className="flex items-center gap-1 text-orange-400 transition-colors text-2xl font-bold capitalize"
                         >
                             GitHub
-                            <FiArrowUpRight />
+                            {/* <FiArrowUpRight /> */}
                         </a>
 
-                         
+
 
                     </div>
 

@@ -10,7 +10,7 @@ const Work = () => {
     return (
         <div className='lg:px-2 min-h-screen' id="work">
             <SplitTextComponent type='chars' >
-                <h1 className='text-5xl md:text-[4vw] font-bold mb-1'>Work</h1>
+                <h1 className='text-5xl md:text-[4vw] font-bold mb-18'>Work</h1>
             </SplitTextComponent>
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                 {projects.map((project) => (

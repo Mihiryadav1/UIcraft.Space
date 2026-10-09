@@ -6,7 +6,7 @@ const About = ({ meImg }) => {
     return (
         <div className='lg:px-2 min-h-screen relative about' id='about'>
             <SplitTextComponent type='chars' delay={1}>
-                <h1 className='text-5xl md:text-[4vw] font-bold mb-20'>About Me</h1>
+                <h1 className='text-5xl md:text-[4vw] font-bold mb-18'>About Me</h1>
             </SplitTextComponent>
             {/* About me */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:mb-30">
@@ -39,7 +39,7 @@ const About = ({ meImg }) => {
 
                 </div>
                 <div className="aboutImg flex items-center md:justify-center relative">
-                    <img src="./This_is_me.webp" alt="Hello thereIntenet feels bad today, sorry!" className="project-image w-[80%] relative z-2 object-cover rounded-xl md:relative md:rotate-5 animate-[hanging_6s_ease-in-out_infinite] " />
+                    <img src="./This_is_me.svg" alt="Hello thereIntenet feels bad today, sorry!" className="project-image w-[80%] relative z-2 object-cover rounded-xl md:relative md:rotate-5 animate-[hanging_6s_ease-in-out_infinite] " />
                 </div>
             </div>
             {/* what i like to work on */}

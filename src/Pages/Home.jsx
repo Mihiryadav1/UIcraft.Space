@@ -36,9 +36,9 @@ const Home = () => {
                     design, and motion come together.
                 </p>
                 <div className="flex items-center justify-center mt-7 lg:mt-5 gap-4">
-                    <button className='px-6 py-3  text-lg rounded-3xl border transition-colors bg-black  text-white duration-400'>
+                    {/* <button className='px-6 py-3  text-lg rounded-3xl border transition-colors bg-black  text-white duration-400'>
                         Resume <span></span>
-                    </button>
+                    </button> */}
                     <button className='px-6 py-3  text-lg rounded-3xl border bg-transparent transition-colors hover:bg-orange-400    duration-500'>
                         My Work <span></span>
                     </button>

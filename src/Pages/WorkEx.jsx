@@ -9,7 +9,7 @@ const WorkEx = ({ workImageTargetRef }) => {
     return (
         <div className='min-h-screen'>
             <SplitTextComponent type='chars' delay={1}>
-                <h1 className='text-5xl md:text-[4vw] font-bold mb-1'>
+                <h1 className='text-5xl md:text-[4vw] font-bold mb-18'>
                     Work Experience
                 </h1>
             </SplitTextComponent>
