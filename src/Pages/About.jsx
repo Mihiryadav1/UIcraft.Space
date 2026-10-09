@@ -61,7 +61,7 @@ const About = ({ meImg }) => {
                             return (
                                 <div
                                     key={service.id}
-                                    className="border border-gray-200 rounded-2xl p-6 bg-[#faf8f6]"
+                                    className="border border-gray-200 rounded-2xl p-6  bg-white"
                                 >
                                     <div
                                         className={`${service.color} w-14 h-14 rounded-xl flex items-center justify-center text-white`}
@@ -73,7 +73,7 @@ const About = ({ meImg }) => {
                                         {service.title}
                                     </h3>
 
-                                    <p className="text-gray-500 mt-2 leading-relaxed text-lg">
+                                    <p className="text-gray-500 mt-3 leading-relaxed text-lg">
                                         {service.description}
                                     </p>
                                 </div>

@@ -105,8 +105,8 @@ const Contact = () => {
 
                 {/* Button */}
                 <button
-                    className="mt-10 bg-black text-white rounded-full p-4 text-lg
-               flex items-center gap-6 hover:bg-orange-400 transition-colors duration-300"
+                    className="mt-10 border rounded-full px-6 py-3 text-lg
+                hover:bg-orange-400 transition-colors duration-300"
                 >
                     Send Message
                     {/* <FiArrowUpRight className="text-xl" /> */}

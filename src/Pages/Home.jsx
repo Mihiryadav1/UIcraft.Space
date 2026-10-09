@@ -54,10 +54,19 @@ const Home = () => {
                     </button> */}
                     <button
                         onClick={() => scrollToSection("#work")}
-                        className="px-6 py-3 text-lg rounded-3xl border bg-transparent transition-colors hover:bg-orange-400 duration-500"
+                        className="px-6 py-3 text-lg rounded-full border bg-transparent transition-colors hover:bg-orange-400 duration-500"
                     >
-                        My Work <span></span>
+                        My Work
+
                     </button>
+                    <div className='flex items-center gap-2 border px-6 py-3 rounded-full'>
+                        <span>Available for work</span>
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                        </span>
+
+                    </div>
                 </div>
 
             </div>

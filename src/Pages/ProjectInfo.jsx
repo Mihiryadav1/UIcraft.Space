@@ -55,7 +55,7 @@ const ProjectInfo = () => {
         >
             <Link
                 to="/"
-                className="inline-block mb-2 text-sm hover:text-orange-500 transition-colors"
+                className="inline-block mb-2 text-lg border px-5 py-2 rounded-full hover:text-orange-500 transition-colors"
             >
                 Back to Work
             </Link>
@@ -121,12 +121,13 @@ const ProjectInfo = () => {
                                 href={project.links.live}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="rounded-full border px-5 py-3 hover:bg-orange-400 transition-colors flex items-center justify-center gap-3"
+                                className="rounded-full border px-6 py-3 hover:bg-orange-400 transition-colors flex items-center justify-center gap-3"
                             >
                                 <span> Visit Live Site </span> <span class="relative flex h-3 w-3">
                                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                                     <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
                                 </span>
+                                
 
                             </a>
                         )}
