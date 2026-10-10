@@ -122,7 +122,7 @@ const ProjectInfo = () => {
                         {
                             project.highlights.map(highlight => {
                                 return (<div className="border-2 mb-3 rounded-2xl p-3">
-                                    {highlight.description
+                                    <h2 className="text-lg font-bold">{highlight.title}</h2>{highlight.description
                                     }
                                 </div>)
                             })
