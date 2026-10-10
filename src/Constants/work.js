@@ -105,7 +105,7 @@ export const projects = [
         number: "03",
         title: "Usability & Accessibility",
         description:
-          "A focus on readable content, predictable interface patterns, and clear visual organization.",
+          "A focus on readable content, predictable interface patterns, clear visual organization and WCAG guidelines.",
       },
     ],
 
@@ -127,7 +127,7 @@ export const projects = [
       },
     ],
 
-    technologies: ["React", "JavaScript", "CSS"],
+    technologies: ["React", "JavaScript", "CSS", "Tailwind", "Shadecn"],
 
     skills: [
       "React Development",
