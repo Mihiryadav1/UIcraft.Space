@@ -103,7 +103,7 @@ const ProjectInfo = () => {
                             Technologies
                         </p>
 
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mb-3   ">
                             {project.technologies.map((tech) => (
                                 <span
                                     key={tech}
@@ -113,6 +113,20 @@ const ProjectInfo = () => {
                                 </span>
                             ))}
                         </div>
+                    </div>
+
+                    <div className="keyHighlight">
+                        <p className="text-2xl text-orange-500 mb-3">
+                            Key Highlight
+                        </p>
+                        {
+                            project.highlights.map(highlight => {
+                                return (<div className="border-2 mb-3 rounded-2xl p-3">
+                                    {highlight.description
+                                    }
+                                </div>)
+                            })
+                        }
                     </div>
                     {/* live link */}
                     <div className="flex gap-3 mb-10 mt-5">
@@ -127,7 +141,7 @@ const ProjectInfo = () => {
                                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                                     <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
                                 </span>
-                                
+
 
                             </a>
                         )}
