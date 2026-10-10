@@ -33,25 +33,23 @@ const Home = () => {
     return (
         <div className='min-h-[120vh] md:h-screen relative' id="home">
 
-            <div className="text-center pt-60 lg:pt-30">
+            <div className="text-center pt-60 lg:pt-30 ">
                 <p className="text-2xl lg:text-[2rem] mb-4 hero-greet">
                     Hi, I'm Mihir 👋
                 </p>
                 <SplitTextComponent type='words'>
                     <h1 className="text-5xl lg:text-[6vw] leading-[1.2] font-semibold tracking-[-0.04em]">
-                        A Frontend Engineer,
+                        A <span className='text-orange-400'>Frontend Engineer</span>,
                         <br />
                         building interactive digital experiences.
                     </h1>
                 </SplitTextComponent>
-                <p className="hero-desc text-base lg:text-xl leading-relaxed sm:max-w-[60%] mx-auto mt-8 text-center">
-                    I build thoughtful digital experiences where code,
+                <p className="hero-desc  text-xl lg:text-2xl leading-relaxed max-w-[80%] md:max-w-[30%] mx-auto mt-8 text-center">
+                    I love building thoughtful digital experiences where code,
                     design, and motion come together.
                 </p>
                 <div className="flex items-center justify-center mt-7 lg:mt-5 gap-4">
-                    {/* <button className='px-6 py-3  text-lg rounded-3xl border transition-colors bg-black  text-white duration-400'>
-                        Resume <span></span>
-                    </button> */}
+
                     <button
                         onClick={() => scrollToSection("#work")}
                         className="px-6 py-3 text-lg rounded-full border bg-transparent transition-colors hover:bg-orange-400 duration-500"
@@ -60,8 +58,8 @@ const Home = () => {
 
                     </button>
                     <button
-                        className="px-6 py-3 text-lg rounded-full border bg-transparent transition-colors hover:bg-orange-400 duration-500 flex items-center gap-3">
-                        <span>Available for work</span>
+                        className="px-6 py-3 text-lg rounded-full border bg-transparent transition-colors hover:bg-orange-400 duration-500 flex items-center gap-3" onClick={() => scrollToSection("#contact")}>
+                        <span >Available for work</span>
                         <span class="relative flex h-3 w-3">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
