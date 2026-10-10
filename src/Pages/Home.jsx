@@ -34,7 +34,7 @@ const Home = () => {
         <div className='min-h-[120vh] md:h-screen relative' id="home">
 
             <div className="text-center pt-60 lg:pt-30">
-                <p className="text-lg lg:text-[2rem] mb-4 hero-greet">
+                <p className="text-2xl lg:text-[2rem] mb-4 hero-greet">
                     Hi, I'm Mihir 👋
                 </p>
                 <SplitTextComponent type='words'>
@@ -59,14 +59,15 @@ const Home = () => {
                         My Work
 
                     </button>
-                    <div className='flex items-center gap-2 border px-6 py-3 rounded-full'>
+                    <button
+                        className="px-6 py-3 text-lg rounded-full border bg-transparent transition-colors hover:bg-orange-400 duration-500 flex items-center gap-3">
                         <span>Available for work</span>
                         <span class="relative flex h-3 w-3">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
                         </span>
 
-                    </div>
+                    </button>
                 </div>
 
             </div>
